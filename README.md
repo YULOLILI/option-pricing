@@ -7,7 +7,8 @@ Python implementations of classic option pricing models, based on Hull's *Option
 | Module | Description | Methods |
 |--------|-------------|---------|
 | **Black-Scholes** | European option pricing with Greeks | BS formula, Delta, Gamma, Theta, Vega, Rho |
-| **Binomial Tree** | CRR binomial tree pricing | European & American options, convergence analysis |
+| **Binomial Tree** | CRR binomial tree pricing | European & American options, convergence to BS |
+| **Monte Carlo** | MC simulation with variance reduction | European + Asian options, antithetic & control variates |
 | **BSM Formula** | Black-Scholes-Merton analytical pricing | Closed-form European call/put |
 
 ## Requirements
@@ -25,6 +26,9 @@ python black_scholes/black_scholes.py
 
 # Binomial Tree pricing
 python binomial_tree/binomial_tree.py
+
+# Monte Carlo simulation (European + Asian)
+python monte_carlo/monte_carlo.py
 
 # BSM analytical formula
 python bsm_formula/bsm_pricing.py
